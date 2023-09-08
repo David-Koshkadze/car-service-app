@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import Partners from "@/components/partners";
 import Image from "next/image";
+import Services from "@/components/services";
 
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
         />
         
       </div>
+
+      <Services />
+    
       <Partners />
     </>
   );
