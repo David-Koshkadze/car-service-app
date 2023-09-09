@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import Partners from "@/components/partners";
 import Image from "next/image";
 import Services from "@/components/services";
+import About from "@/components/about";
 
 export default function Home() {
   return (
@@ -25,24 +26,25 @@ export default function Home() {
           </div>
         </div>
 
-        <Image 
+        <Image
           src="/icons/navigator.svg"
           width={400}
           height={400}
           className="absolute bottom-0 hidden md:w-[200px] lg:w-[400px] md:block md:translate-x-12 lg:translate-x-1/3"
         />
 
-        <Image 
+        <Image
           src="/icons/towing.svg"
-          width={400} 
+          width={400}
           height={400}
           className="absolute top-12 right-0 hidden md:w-[200px] lg:w-[300px] md:block -md:translate-x-12 lg:-translate-x-1/3"
         />
-        
       </div>
 
       <Services />
-    
+
+      <About />
+
       <Partners />
     </>
   );
