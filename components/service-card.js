@@ -1,8 +1,23 @@
 "use client";
+import { motion } from "framer-motion";
 
-export default function ServiceCard({ icon, title, description }) {
+export default function ServiceCard({ icon, title, description, index }) {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, delay: index * 0.1 },
+    },
+  };
+
   return (
-    <div class="h-auto flex flex-col justify-center border-2 border-gray-200 rounded-xl text-center p-4 md:p-5 hover:shadow-md hover:border-blue-600 cursor-pointer transition dark:border-gray-700">
+    <motion.div
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      class="h-auto flex flex-col justify-center border-2 border-gray-200 rounded-xl text-center p-4 md:p-5 hover:shadow-md hover:border-blue-600 cursor-pointer transition dark:border-gray-700"
+    >
       <div class="flex justify-center items-center w-12 h-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-md mx-auto">
         Icon
       </div>
@@ -13,9 +28,7 @@ export default function ServiceCard({ icon, title, description }) {
         </h3>
       </div>
 
-      <div>
-        {description}
-      </div>
-    </div>
+      <div>{description}</div>
+    </motion.div>
   );
 }
