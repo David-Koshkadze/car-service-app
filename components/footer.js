@@ -2,12 +2,12 @@
 
 export default function Footer() {
   return (
-    <footer class="bg-gray-900 bottom-0">
-      <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          <div class="col-span-full lg:col-span-1">
+    <footer className="bg-gray-900 bottom-0">
+      <div className="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <div className="col-span-full lg:col-span-1">
             <a
-              class="flex-none text-xl font-semibold text-white"
+              className="flex-none text-xl font-semibold text-white"
               href="#"
               aria-label="Brand"
             >
@@ -15,13 +15,13 @@ export default function Footer() {
             </a>
           </div>
 
-          <div class="col-span-1">
-            <h4 class="font-semibold text-gray-100">Product</h4>
+          <div className="col-span-1">
+            <h4 className="font-semibold text-gray-100">Product</h4>
 
-            <div class="mt-3 grid space-y-3">
+            <div className="mt-3 grid space-y-3">
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Pricing
@@ -29,7 +29,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Changelog
@@ -37,7 +37,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Docs
@@ -46,13 +46,13 @@ export default function Footer() {
             </div>
           </div>
 
-          <div class="col-span-1">
-            <h4 class="font-semibold text-gray-100">სერვისები</h4>
+          <div className="col-span-1">
+            <h4 className="font-semibold text-gray-100">სერვისები</h4>
 
-            <div class="mt-3 grid space-y-3">
+            <div className="mt-3 grid space-y-3">
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   About us
@@ -60,7 +60,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Blog
@@ -68,18 +68,18 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Careers
                 </a>{" "}
-                <span class="inline ml-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-md">
+                <span className="inline ml-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-md">
                   We're hiring
                 </span>
               </p>
               <p>
                 <a
-                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Customers
@@ -89,9 +89,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
-          <div class="flex justify-between items-center">
-            <p class="text-sm text-gray-400">
+        <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+          <div className="flex justify-between items-center">
+            <p className="text-sm text-gray-400">
               © 2023 მანქანის სერვისი. ყველა უფლება დაცულია
             </p>
           </div>
