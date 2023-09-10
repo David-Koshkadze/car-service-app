@@ -1,15 +1,9 @@
 import React from "react";
 import ServiceCard from "./service-card";
 
-const cardData = [
-  {
-    title: "ევაკუატორით მომსახურება",
-  },
-];
-
 export default function services() {
   return (
-    <section className="py-16 h-auto">
+    <section className="pt-16 pb-8 h-auto">
       <h1 className="text-3xl text-center">სერვისები</h1>
 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">

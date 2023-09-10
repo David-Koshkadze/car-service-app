@@ -3,6 +3,7 @@ import Partners from "@/components/partners";
 import Services from "@/components/services";
 import About from "@/components/about";
 import Benefits from "@/components/benefits";
+import PhotoGallery from "@/components/photo-gallery";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Services />
 
       <About />
+
+      <PhotoGallery />
 
       <Partners />
     </>
