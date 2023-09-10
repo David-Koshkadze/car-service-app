@@ -1,7 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (

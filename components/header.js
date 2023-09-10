@@ -1,15 +1,18 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <>
       <div className="max-w-[85rem] w-full mx-auto px-4 flex justify-end py-2">
         <span className="text-sm mr-4">სამუშაო საათები: 24/7</span>
-        <span className="text-sm"><strong>ტელეფონი:</strong> +995 598 41 00 90</span>
+        <span className="text-sm">
+          <strong>ტელეფონი:</strong> +995 598 41 00 90
+        </span>
       </div>
-      <header className="sticky top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800 shadow-sm">
+      <header className="sticky top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-1 dark:bg-gray-800 shadow-sm">
         <nav
           className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
@@ -19,7 +22,7 @@ export default function Header() {
               className="flex-none text-xl font-semibold dark:text-white"
               href="#"
             >
-              Brand
+              <Image width={200} height={70} src="/logo/logo.png" />
             </a>
             <div className="sm:hidden">
               <button

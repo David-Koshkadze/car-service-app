@@ -33,9 +33,6 @@ export default function PhotoGallery() {
         slidesPerView={3}
         centeredSlides={true}
         spaceBetween={30}
-        pagination={{
-          type: "fraction",
-        }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -43,7 +40,7 @@ export default function PhotoGallery() {
         {images.map((image, idx) => (
           <SwiperSlide>
             <div
-              className="bg-contain bg-no-repeat h-96"
+              className="bg-cover bg-no-repeat h-[500px] rounded-xl"
               style={{
                 backgroundImage: `url(${image})`,
               }}

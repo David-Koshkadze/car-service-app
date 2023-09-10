@@ -15,7 +15,9 @@ import Image from "next/image";
 export default function Benefits() {
   return (
     <div className="w-full border pt-16 relative">
-      <h1 className="text-3xl text-center mb-8">რატომ მანქანის სერვისი?</h1>
+      <h1 className="text-3xl text-center mb-8">
+        რატომ უნდა აირჩიოთ <span className="text-violet-700 font-bold">Tow.ge</span>
+      </h1>
 
       <div className="grid place-content-center gap-4 p-6 relative">
         <motion.div
