@@ -14,7 +14,7 @@ export default function Partners() {
             className="p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800"
             key={idx}
           >
-            Company Logo
+            Company
           </div>
         ))}
       </div>
