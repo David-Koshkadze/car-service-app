@@ -26,8 +26,8 @@ export default function ServiceCard({ icon, title, description, index }) {
       }}
       className="h-auto flex flex-col justify-center border-2 rounded-xl text-center p-4 md:p-5 hover:shadow-lg hover:scale-110 border-blue-600 cursor-pointer transition dark:border-gray-700"
     >
-      <div className="flex justify-center items-center w-12 h-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-md mx-auto">
-        Icon
+      <div className="text-gray-100 flex justify-center items-center w-16 p-2 h-16 bg-gradient-to-br from-blue-600 to-violet-600 rounded-md mx-auto">
+        {icon}
       </div>
 
       <div className="my-3">

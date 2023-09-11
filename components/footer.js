@@ -1,4 +1,39 @@
-"use client";
+import Image from "next/image";
+import Link from "next/link";
+
+const footerServices = [
+  { title: "ევაკუატორით მომსახურება" },
+  { title: "მოტოციკლის წაყვანა" },
+  { title: "დაიმპორტებული ავტომობილის ადგილზე მიყვანა" },
+  { title: "საწვავის მიწოდება" },
+];
+
+const navItems = [
+  {
+    title: "მთავარი",
+    path: "/",
+  },
+  {
+    title: "სერვისები",
+    path: "/services",
+  },
+  {
+    title: "ჩვენს შესახებ",
+    path: "/about",
+  },
+  {
+    title: "ფოტო გალერეა",
+    path: "/gallery",
+  },
+  {
+    title: "პარტნიორები",
+    path: "/partners",
+  },
+  {
+    title: "კონტაქტი",
+    path: "/contact",
+  },
+];
 
 export default function Footer() {
   return (
@@ -11,38 +46,24 @@ export default function Footer() {
               href="#"
               aria-label="Brand"
             >
-              Brand
+              <Image width={300} height={70} src="/logo/logo.png" />
             </a>
           </div>
 
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Product</h4>
+            <h4 className="font-semibold text-gray-100">მენიუ</h4>
 
             <div className="mt-3 grid space-y-3">
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  Changelog
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  Docs
-                </a>
-              </p>
+              {navItems.map((item, idx) => (
+                <p key={idx}>
+                  <Link
+                    className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    href={item.path}
+                  >
+                    {item.title}
+                  </Link>
+                </p>
+              ))}
             </div>
           </div>
 
@@ -50,41 +71,16 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-100">სერვისები</h4>
 
             <div className="mt-3 grid space-y-3">
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  About us
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  Blog
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  Careers
-                </a>{" "}
-                <span className="inline ml-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-md">
-                  We're hiring
-                </span>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
-                  href="#"
-                >
-                  Customers
-                </a>
-              </p>
+              {footerServices.map((item, idx) => (
+                <p>
+                  <a
+                    className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    href="#"
+                  >
+                    {item.title}
+                  </a>
+                </p>
+              ))}
             </div>
           </div>
         </div>
