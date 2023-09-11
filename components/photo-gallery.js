@@ -38,7 +38,7 @@ export default function PhotoGallery() {
         className="mySwiper"
       >
         {images.map((image, idx) => (
-          <SwiperSlide>
+          <SwiperSlide key={idx}>
             <div
               className="bg-cover bg-no-repeat h-[500px] rounded-xl"
               style={{

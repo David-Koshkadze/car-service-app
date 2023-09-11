@@ -40,6 +40,7 @@ export default function services() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {servicesData.map((item, idx) => (
             <ServiceCard
+              key={idx}
               id={idx}
               index={idx}
               title={item.title}

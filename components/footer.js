@@ -46,7 +46,7 @@ export default function Footer() {
               href="#"
               aria-label="Brand"
             >
-              <Image width={300} height={70} src="/logo/logo.png" />
+              <Image alt="footer logo" width={300} height={70} src="/logo/logo.png" />
             </a>
           </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
 
             <div className="mt-3 grid space-y-3">
               {footerServices.map((item, idx) => (
-                <p>
+                <p key={idx}>
                   <a
                     className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
                     href="#"
