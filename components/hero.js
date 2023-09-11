@@ -1,27 +1,27 @@
-'use client'
+"use client";
 import React from "react";
 import Link from "next/link";
 
 export default function Hero() {
   return (
     <div className="relative overflow-hidden">
-      {/* <div
+      <div
         aria-hidden="true"
-        className="flex absolute -top-96 left-1/2 transform -translate-x-1/2"
+        className="hidden md:flex absolute -top-96 left-1/2 transform -translate-x-1/2"
       >
         <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
         <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
-      </div> */}
+      </div>
 
-      <video autoPlay loop muted className="absolute">
-        <source src="/hero_video.mp4" type="video/mp4"/>
+      <video autoPlay loop muted className="relative md:absolute">
+        <source src="/hero_video.mp4" type="video/mp4" />
       </video>
 
-      <div className="relative z-10 h-[30rem]">
+      <div className="relative z-10 md:h-[30rem]">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
           <div className="max-w-2xl text-center mx-auto">
             <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-              რაღაც ტექსტი ინფო
+              Tow.ge - შენი მანქანის სერვისი
             </p>
 
             <div className="my-8 max-w-2xl">
@@ -52,8 +52,8 @@ export default function Hero() {
                   <path
                     d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                   />
                 </svg>
               </Link>
