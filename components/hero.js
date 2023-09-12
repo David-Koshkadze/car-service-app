@@ -17,23 +17,23 @@ export default function Hero() {
 
       <div className="relative z-10 md:h-[30rem]">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-          <div className="max-w-2xl text-center mx-auto">
+          <div className="text-center mx-auto">
             <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               Tow.ge - შენი მანქანის სერვისი
             </p>
 
-            <div className="my-8 max-w-2xl">
+            <div className="my-8">
               <h1 className="inline-block py-2 text-4xl md:text-5xl lg:text-6xl mb-4 bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
                 Tow.ge
               </h1>
-              <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-                მანქანის სერვისი
+              <h1 className="font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+                ევაკუატორის მომსახურება
               </h1>
             </div>
 
-            <div className="my-8 max-w-3xl">
-              <p className="text-lg font-bold text-gray-700 dark:text-gray-400">
-                საუკეთესო მანქანის სერვისი მთელს კავკასიაში.
+            <div className="my-8 text-center">
+              <p className="text-center text-lg font-bold text-gray-700 dark:text-gray-400">
+                საუკეთესო მანქანის სერვისი მთელს საქართველოში.
               </p>
             </div>
 

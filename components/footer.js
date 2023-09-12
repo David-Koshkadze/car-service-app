@@ -26,10 +26,6 @@ const navItems = [
     path: "/gallery",
   },
   {
-    title: "პარტნიორები",
-    path: "/partners",
-  },
-  {
     title: "კონტაქტი",
     path: "/contact",
   },

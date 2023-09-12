@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Benefits() {
   return (
-    <div className="w-full border pt-16 relative">
+    <div className="w-full pt-16 relative">
       <h1 className="text-3xl text-center mb-8">
         რატომ უნდა აირჩიოთ{" "}
         <span className="text-violet-700 font-bold">Tow.ge</span>

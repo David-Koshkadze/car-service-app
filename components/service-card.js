@@ -38,7 +38,9 @@ export default function ServiceCard({ icon, title, description, index }) {
           </h3>
         </div>
 
-        <div className="">{description}</div>
+        <p>
+          {description}
+        </p>
       </div>
     </motion.div>
   );

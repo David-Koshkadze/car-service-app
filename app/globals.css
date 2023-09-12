@@ -24,3 +24,18 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Styles for WebKit-based browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff; /* Thumb color (blue in this case) */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}

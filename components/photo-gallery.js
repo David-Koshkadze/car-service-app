@@ -27,9 +27,8 @@ const images = [
 
 export default function PhotoGallery() {
   return (
-    <div className="max-w-[85rem] mx-auto px-8 pt-12">
+    <div className="max-w-[85rem] mx-auto px-8 py-12">
       <h1 className="text-3xl py-8 text-center">ფოტო გალერეა</h1>
-
       <Swiper
         slidesPerView={1}
         centeredSlides={true}
