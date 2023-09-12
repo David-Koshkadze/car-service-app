@@ -150,7 +150,7 @@ export default function services() {
       <h1 className="text-3xl text-center">სერვისები</h1>
 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {servicesData.map((item, idx) => (
             <ServiceCard
               key={idx}

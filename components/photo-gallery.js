@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -30,12 +30,21 @@ export default function PhotoGallery() {
       <h1 className="text-3xl py-8 text-center">ფოტო გალერეა</h1>
 
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         centeredSlides={true}
+        centeredSlidesBounds={true}
         spaceBetween={30}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {images.map((image, idx) => (
           <SwiperSlide key={idx}>
