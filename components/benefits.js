@@ -1,6 +1,3 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Benefits() {
@@ -12,33 +9,28 @@ export default function Benefits() {
       </h1>
 
       <div className="grid place-content-center gap-4 p-6 relative">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="bg-transparent border border-blue-300 hover:bg-blue-300 rounded-md flex items-center p-4 gap-4 shadow-md md:-translate-x-40 hover:scale-110 transition"
-        >
+        <div className="bg-transparent border border-blue-300 hover:bg-blue-300 rounded-md flex items-center p-4 gap-4 shadow-md md:-translate-x-40 hover:scale-110 transition">
           <Image alt="car" src="/icons/car.svg" width={100} height={100} />
           <span>სრული მომსახურება</span>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="bg-transparent border border-fuchsia-300 hover:bg-fuchsia-300 rounded-md flex items-center p-4 gap-4 shadow-md hover:scale-110 transition"
-        >
-          <Image alt="truck" src="/icons/big-truck.svg" width={100} height={100} />
+        </div>
+        <div className="bg-transparent border border-fuchsia-300 hover:bg-fuchsia-300 rounded-md flex items-center p-4 gap-4 shadow-md hover:scale-110 transition">
+          <Image
+            alt="truck"
+            src="/icons/big-truck.svg"
+            width={100}
+            height={100}
+          />
           <span>ხარისხი და სანდოობა</span>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="bg-transparent border border-emerald-300 hover:bg-emerald-300 rounded-md flex items-center p-4 gap-4 shadow-md md:translate-x-40 hover:scale-110 transition"
-        >
-          <Image alt="rocket" src="/icons/rocket.svg" width={100} height={100} />
+        </div>
+        <div className="bg-transparent border border-emerald-300 hover:bg-emerald-300 rounded-md flex items-center p-4 gap-4 shadow-md md:translate-x-40 hover:scale-110 transition">
+          <Image
+            alt="rocket"
+            src="/icons/rocket.svg"
+            width={100}
+            height={100}
+          />
           <span>სისწრაფე და ეფექტურობა</span>
-        </motion.div>
+        </div>
       </div>
 
       <Image

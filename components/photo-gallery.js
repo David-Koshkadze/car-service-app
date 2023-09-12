@@ -6,8 +6,9 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const images = [
   "/images/img1.jpg",
@@ -35,7 +36,7 @@ export default function PhotoGallery() {
         centeredSlidesBounds={true}
         spaceBetween={30}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper"
         breakpoints={{
           768: {
@@ -45,6 +46,7 @@ export default function PhotoGallery() {
             slidesPerView: 3,
           },
         }}
+        autoplay={true}
       >
         {images.map((image, idx) => (
           <SwiperSlide key={idx}>
