@@ -24,19 +24,22 @@ export default function ServiceCard({ icon, title, description, index }) {
       viewport={{
         once: true,
       }}
-      className="h-auto flex flex-col justify-center border-2 rounded-xl text-center p-4 md:p-5 hover:shadow-lg hover:scale-110 border-blue-600 cursor-pointer transition dark:border-gray-700"
+      className="relative flex flex-col justify-center border-2 rounded-xl text-center p-4 md:p-5 hover:shadow-lg hover:scale-110 border-blue-600 cursor-pointer transition dark:border-gray-700"
     >
-      <div className="text-gray-100 flex justify-center items-center w-16 p-2 h-16 bg-gradient-to-br from-blue-600 to-violet-600 rounded-md mx-auto">
+      <div className="text-gray-100 flex justify-center items-center w-20 h-20 p-2 bg-gradient-to-br from-blue-600 to-violet-600 rounded-md mx-auto">
         {icon}
       </div>
 
-      <div className="my-3">
-        <h3 className="text-sm md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-          {title}
-        </h3>
-      </div>
+      {/* Card Body */}
+      <div className="flex-1">
+        <div className="my-3">
+          <h3 className="text-sm md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+            {title}
+          </h3>
+        </div>
 
-      <div>{description}</div>
+        <div className="">{description}</div>
+      </div>
     </motion.div>
   );
 }
