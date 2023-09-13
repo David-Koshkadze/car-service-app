@@ -43,7 +43,7 @@ export default function Header() {
               fill="#1C274C"
             />
           </svg>
-          <span>+995 591 90 80 70</span>
+          <span>+995 599 71 71 42</span>
         </div>
       </div>
 

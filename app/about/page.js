@@ -1,5 +1,9 @@
-export default function About() {
+import About from "@/components/about";
+
+export default function page() {
   return (
-    <div>ჩვენს შესახებ</div>
-  )
+    <div className="h-screen bg-neutral-100 pt-12">
+      <About />
+    </div>
+  );
 }
