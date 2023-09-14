@@ -84,12 +84,16 @@ export default function Footer() {
               ))}
             </div>
           </div>
+
+          <div className="col-span-2 flex justify-center">
+            <p className="text-gray-100 font-bold">+995 599 71 71 42</p>
+          </div>
         </div>
 
         <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
           <div className="flex justify-between items-center">
             <p className="text-sm text-gray-400">
-              © 2023 მანქანის სერვისი. ყველა უფლება დაცულია
+              © 2023 Tow.ge - ევაკუატორის მომსახურება. ყველა უფლება დაცულია
             </p>
           </div>
         </div>

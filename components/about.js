@@ -32,7 +32,7 @@ export default function About() {
                 width={400}
                 height={600}
                 src="/images/truck-girl.jpg"
-                className="rounded-2xl"
+                className="rounded-2xl shadow-2xl"
                 alt="about-us"
                 priority={true}
               />
