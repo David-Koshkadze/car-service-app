@@ -34,6 +34,7 @@ export default function About() {
                 src="/images/truck-girl.jpg"
                 className="rounded-2xl"
                 alt="about-us"
+                priority={true}
               />
             </div>
           </div>

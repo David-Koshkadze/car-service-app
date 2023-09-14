@@ -54,7 +54,7 @@ export default function Header() {
           className="max-w-[84rem] mx-auto z-50 bg-neutral-100"
         >
           <Navbar.Brand href="/">
-            <Image alt="logo" width={200} height={70} src="/logo/logo.png" />
+            <Image alt="logo" width={200} height={70} src="/logo/logo.png" priority={true}/>
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>

@@ -42,7 +42,12 @@ export default function Footer() {
               href="#"
               aria-label="Brand"
             >
-              <Image alt="footer logo" width={300} height={70} src="/logo/logo.png" />
+              <Image
+                alt="footer logo"
+                width={300}
+                height={70}
+                src="/logo/logo.png"
+              />
             </a>
           </div>
 
