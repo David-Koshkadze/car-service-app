@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     title: "კონტაქტი",
-    path: "/contact",
+    path: "/contact"
   },
 ];
 
