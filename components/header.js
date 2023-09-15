@@ -20,10 +20,6 @@ const navItems = [
     title: "ფოტო გალერეა",
     path: "/gallery",
   },
-  {
-    title: "კონტაქტი",
-    path: "/contact",
-  },
 ];
 
 export default function Header() {
